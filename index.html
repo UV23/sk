@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background: url(Blurs.svg) no-repeat 50%;
+            height: 100vh;
+            background-size: cover;
+            width: 1366px;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        #column{
+            width: 190%;
+            margin: 0px auto;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            /* border: 3px solid black; */
+            align-items: center;
+        }
+        #imagebox{
+            height: 180px;
+            /* background-image: url('image2.jpg'); */
+            width: 180px;
+            /* border: 1px solid black; */
+            margin-top: 10vh;
+            /* object-fit: cover; */
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+            /* background-image: url(/image2.jpg); */
+            border-radius: 50%;
+
+        }
+        #btnbox{
+            height: 80px;
+            width: 400px;
+            /* border: 1px solid black; */
+            margin-top: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position:static; */
+        }
+        button{
+            background-color: black;
+            padding: 18px 36px;
+            border-radius: 999px;
+            border: none;
+            font-size: 18px;
+            font-family: Inter, sans-serif;
+            cursor: pointer;
+            transition: all 0.5s ease 0s;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+        button:hover{
+            color: rgb(127, 235, 235);
+            /* padding: 23px 44px; */
+            transform: scale(1.112);
+        }
+        button:active{
+            transform: scale(0.88);
+        }
+        #btn1{
+            margin-right: 12px;
+
+        }
+        #txt{
+            margin-top: 32px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: Inter, sans-serif;
+        }
+        img{
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        #txt2{
+            margin-top: 42px;
+            font-size: 34px;
+            font-family: Inter, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        
+       
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div id="column">
+           <p id="txt2">Sakshi&heartsuit;</p>
+           <div id="imagebox">
+            <img src="image3.jpg" alt="">
+
+           </div>
+           <div id="btnbox">
+               <button id="btn1" onclick="playaudio()">Play</button>
+               <button id="btn2" onclick="resetaudio()">Reset</button>
+            </div>
+            
+            <p id="txt">Made with &#10084; by UV</p>
+
+       </div>
+   </div>
+   <audio id = "audio" src="song.mp3" type = "audio/mpeg"></audio>
+
+</body>
+<script src="index.js"> </script>
+</html>
